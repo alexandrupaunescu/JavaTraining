@@ -20,7 +20,7 @@ public class TestGenerics {
         boxForIntegersOne.setContent(-23);
         System.out.println("First box for Integer contains:"+ boxForIntegers.getContent());
         System.out.println("Second box for Integer contains:"+ boxForIntegersOne.getContent());
-        Box<String> boxForStrings = new Box<>();
+        //Box<String> boxForStrings = new Box<>(); Number nu contine String
     }
     
 }

@@ -7,7 +7,7 @@ package usinginstructions;
  *Try to overide a final class method
  * @author Dinamo
  */
-public class PirateClass extends FrozenClass{
+public class PirateClass{ //extends FrozenClass{
     
     
    
