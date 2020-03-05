@@ -198,7 +198,7 @@ class ALU {
                      case KEY_MULTIPLY: result = firstOperand * secondOperand;
                      case KEY_DIVIDE: result = firstOperand / secondOperand;
                    }    
-                   parent.getCd().display(result);
+                   parent.getCd().display(new Integer(result).toString());
                 }
        }
         }
