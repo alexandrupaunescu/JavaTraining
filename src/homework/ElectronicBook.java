@@ -12,7 +12,7 @@ import java.util.LinkedList;
 public class ElectronicBook {
     public static String DEFAULT_STRING_NAME = "Default String Value";
     public static float DEFAULT_PRICE = (float)0.0;
-    public enum YearOfPublication {Y_2018,Y_2019,Y_2020};
+    public enum YearOfPublication {Y_2016,Y_2017,Y_2018,Y_2019,Y_2020};
     public enum FormatOfElectronicBook {iBook,eBook,PDF};
     public enum ElectronicBookReader {iPad,iPhone,Kindle, pdfReader};
     private String title = DEFAULT_STRING_NAME;
@@ -28,7 +28,8 @@ public class ElectronicBook {
     public void printBook(){
         System.out.println("Book title: "+ title);
         System.out.println("Book ISBN: "+ ISBN);
-        System.out.println("Book publisher: "+ publisher);
+        //System.out.println("Book publisher: "+ publisher);
+        System.out.println("Book year of publication : " + yearOfPublicatiob);
         System.out.println("Book price: "+ price);
         for(String currentAuthor: autors){
             System.out.println("Book author: "+currentAuthor);

@@ -17,7 +17,7 @@ public class IBook extends ElectronicBook{
     public LinkedList<ElectronicBookReader> getListOfReadingDevices() {
         return listOfReadingDevices;
     }   
-    
+     
     public void printBook(){
         super.printBook();
         for(ElectronicBook.ElectronicBookReader currentReader: listOfReadingDevices){
