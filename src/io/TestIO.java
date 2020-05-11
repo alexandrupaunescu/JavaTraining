@@ -25,7 +25,7 @@ public class TestIO {
     public static void main(String[] args) {
         try {
             // Make URL to the web page
-            URL webPageURL =  new URL("http://www.a-stri.ro/");
+            URL webPageURL =  new URL("https://www.a-sti.ro/");
             // Get the input stream  through URL Connection
             URLConnection connectionToWebPage = webPageURL.openConnection();
             // create an InputStream to read the content
@@ -38,6 +38,7 @@ public class TestIO {
             // Use a reader and output the text content to System.out.
             // For binary content, it`s better to directly read the bytes from stream and write
             // to the target file.
+            //read each line and write to System.out
             while((null !=(line= readerObject.readLine()))) {
                 System.out.println(line);
             }
