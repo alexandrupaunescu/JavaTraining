@@ -46,7 +46,7 @@ class ALU {
            break;
            case KEY_1:
            {
-               if (DeskComputerButton.ButtonMarkups.KEY_1 == operator){
+               if (DeskComputerButton.ButtonMarkups.KEY_0 == operator){
                    String temp = String.valueOf(firstOperand);
                    temp=temp.concat("1");
                    parent.getCd().display(temp);
@@ -62,7 +62,7 @@ class ALU {
            break;
            case KEY_2:
            {
-               if (DeskComputerButton.ButtonMarkups.KEY_2 == operator){
+               if (DeskComputerButton.ButtonMarkups.KEY_0 == operator){
                    String temp = String.valueOf(firstOperand);
                    temp=temp.concat("2");
                    parent.getCd().display(temp);
@@ -78,7 +78,7 @@ class ALU {
            break;
            case KEY_3:
            {
-               if (DeskComputerButton.ButtonMarkups.KEY_3 == operator){
+               if (DeskComputerButton.ButtonMarkups.KEY_0 == operator){
                    String temp = String.valueOf(firstOperand);
                    temp=temp.concat("3");
                    parent.getCd().display(temp);
@@ -94,7 +94,7 @@ class ALU {
            break;
            case KEY_4:
            {
-               if (DeskComputerButton.ButtonMarkups.KEY_4 == operator){
+               if (DeskComputerButton.ButtonMarkups.KEY_0 == operator){
                    String temp = String.valueOf(firstOperand);
                    temp=temp.concat("4");
                    parent.getCd().display(temp);
@@ -110,7 +110,7 @@ class ALU {
            break;
            case KEY_5:
            {
-               if (DeskComputerButton.ButtonMarkups.KEY_5 == operator){
+               if (DeskComputerButton.ButtonMarkups.KEY_0 == operator){
                    String temp = String.valueOf(firstOperand);
                    temp=temp.concat("5");
                    parent.getCd().display(temp);
@@ -126,7 +126,7 @@ class ALU {
            break;
            case KEY_6:
            {
-               if (DeskComputerButton.ButtonMarkups.KEY_6 == operator){
+               if (DeskComputerButton.ButtonMarkups.KEY_0 == operator){
                    String temp = String.valueOf(firstOperand);
                    temp=temp.concat("6");
                    parent.getCd().display(temp);
@@ -142,7 +142,7 @@ class ALU {
            break;
            case KEY_7:
            {
-               if (DeskComputerButton.ButtonMarkups.KEY_7 == operator){
+               if (DeskComputerButton.ButtonMarkups.KEY_0 == operator){
                    String temp = String.valueOf(firstOperand);
                    temp=temp.concat("7");
                    parent.getCd().display(temp);
@@ -158,7 +158,7 @@ class ALU {
            break;
            case KEY_8:
            {
-               if (DeskComputerButton.ButtonMarkups.KEY_8 == operator){
+               if (DeskComputerButton.ButtonMarkups.KEY_0 == operator){
                    String temp = String.valueOf(firstOperand);
                    temp=temp.concat("8");
                    parent.getCd().display(temp);
@@ -174,7 +174,7 @@ class ALU {
            break;
            case KEY_9:
            {
-               if (DeskComputerButton.ButtonMarkups.KEY_9 == operator){
+               if (DeskComputerButton.ButtonMarkups.KEY_0 == operator){
                    String temp = String.valueOf(firstOperand);
                    temp=temp.concat("9");
                    parent.getCd().display(temp);
@@ -188,14 +188,34 @@ class ALU {
                } 
            }
            break;
-           case KEY_PLUS:
+           case KEY_PLUS:{
                operator = DeskComputerButton.ButtonMarkups.KEY_PLUS;
                parent.getCd().display(String.valueOf(operator));
+           }
+           break;
+           case KEY_MINUS:{
+               operator = DeskComputerButton.ButtonMarkups.KEY_MINUS;
+               parent.getCd().display(String.valueOf(operator));
+           }
+           break;
+           case KEY_MULTIPLY:{
+               operator = DeskComputerButton.ButtonMarkups.KEY_MULTIPLY;
+               parent.getCd().display(String.valueOf(operator));
+           }
+           break;
+           case KEY_DIVIDE:{
+               operator = DeskComputerButton.ButtonMarkups.KEY_DIVIDE;
+               parent.getCd().display(String.valueOf(operator));
+           }
+           break;
                case KEY_EQUAL:{
                    switch(operator){
                      case KEY_PLUS: result = firstOperand + secondOperand;
+                     break;
                      case KEY_MINUS: result = firstOperand - secondOperand;
+                     break;
                      case KEY_MULTIPLY: result = firstOperand * secondOperand;
+                     break;
                      case KEY_DIVIDE: result = firstOperand / secondOperand;
                    }    
                    parent.getCd().display(new Integer(result).toString());

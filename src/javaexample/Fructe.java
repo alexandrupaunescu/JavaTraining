@@ -10,7 +10,8 @@ package javaexample;
  * @author GAP
  */
 public abstract class Fructe {
-    private String culoare ="Rosu";
+
+    private String culoare = "Rosu";
     public static Boolean areCodita = true;
 
     public String getCuloare() {
@@ -22,6 +23,6 @@ public abstract class Fructe {
     }
     protected String gust = "Dulce";
     public String greutate = "20g";
-    
+
     public abstract String getForma();
 }

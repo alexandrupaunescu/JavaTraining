@@ -5,6 +5,7 @@ package usinginstructions.generics;
 
 /**
  * Testing generics classes and methods
+ *
  * @author Dinamo
  */
 public class TestGenerics {
@@ -18,9 +19,9 @@ public class TestGenerics {
         boxForIntegers.setContent(34);
         Box<Integer> boxForIntegersOne = new Box<>();
         boxForIntegersOne.setContent(-23);
-        System.out.println("First box for Integer contains:"+ boxForIntegers.getContent());
-        System.out.println("Second box for Integer contains:"+ boxForIntegersOne.getContent());
+        System.out.println("First box for Integer contains:" + boxForIntegers.getContent());
+        System.out.println("Second box for Integer contains:" + boxForIntegersOne.getContent());
         //Box<String> boxForStrings = new Box<>(); Number nu contine String
     }
-    
+
 }

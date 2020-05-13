@@ -11,16 +11,19 @@ package javaexample;
  */
 public class Salami implements Saleable {
 // price of salami
-    float priceOfSalami = (float)36.99;
+
+    float priceOfSalami = (float) 36.99;
+
     @Override
     public float getSalePrice() {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-       return priceOfSalami;
+        return priceOfSalami;
     }
 
-  
-    public enum Taste {STRONG, MILD, NUTTY}; 
-  
+    public enum Taste {
+        STRONG, MILD, NUTTY
+    };
+
     private Taste gust;
 // metods   
 
@@ -40,6 +43,4 @@ public class Salami implements Saleable {
         this.gust = gust;
     }
 
-    
-    
 }

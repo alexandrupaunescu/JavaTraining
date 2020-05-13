@@ -9,19 +9,21 @@ package javaexample;
  *
  * @author Dinamo
  */
-public class Car implements Saleable  {
+public class Car implements Saleable {
+
     private float salePrice = (float) 500.99;
-    public  String name; // name of brand  
+    public String name; // name of brand  
 
     @Override
     public float getSalePrice() {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         return salePrice;
-        
+
     }
 
-
-    public enum  Color {RED, BLUE, GREEN, BLACK};
+    public enum Color {
+        RED, BLUE, GREEN, BLACK
+    };
     public Color color; //Color of car
     public short speed; // max speed of car
 

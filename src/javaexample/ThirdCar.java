@@ -10,15 +10,19 @@ package javaexample;
  * @author Dinamo
  */
 public class ThirdCar implements Saleable {
-    float salePriceOfThirdCar = (float)5500.99;
-    public  String name; // name of brand 
+
+    float salePriceOfThirdCar = (float) 5500.99;
+    public String name; // name of brand 
 
     @Override
     public float getSalePrice() {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         return salePriceOfThirdCar;
     }
-    public enum  Color {RED, BLUE, GREEN, BLACK};
+
+    public enum Color {
+        RED, BLUE, GREEN, BLACK
+    };
     public Color color; //Color of car
 
     public String getName() {

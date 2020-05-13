@@ -19,14 +19,14 @@ public class TestJavaIntructions {
     public static void main(String[] args) {
         // test if instructions
         String intersection = "left";   
-        if("Left".equals(intersection)){
+        if("left".equals(intersection)){
             System.out.println("Go left!");
        }
         else{
             System.out.println("Go right!");
                 }
         // test switch intructions
-        int value = 4;
+        int value = 7;
         int otherValue = 2;
         switch(value+otherValue){ 
             case 3:

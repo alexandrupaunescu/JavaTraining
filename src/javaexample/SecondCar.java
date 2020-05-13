@@ -9,20 +9,20 @@ package javaexample;
  *
  * @author Dinamo
  */
-public class SecondCar implements Saleable{
-    
+public class SecondCar implements Saleable {
+
     float priceOfSecondCar = (float) 7000.99;
     private String name;
 
     @Override
     public float getSalePrice() {
-       // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-      return priceOfSecondCar;
+        // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return priceOfSecondCar;
     }
 
-    
-    
-    public enum  Color {RED, BLUE, GREEN, BLACK};
+    public enum Color {
+        RED, BLUE, GREEN, BLACK
+    };
     public Color color; //Color of car
 
     public String getName() {
@@ -50,5 +50,4 @@ public class SecondCar implements Saleable{
     }
     public short speed; // max speed of car
 
-    
 }
