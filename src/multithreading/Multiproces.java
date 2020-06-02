@@ -29,7 +29,7 @@ public class Multiproces {
             pb = new ProcessBuilder(
                     "java",
                     "-classpath",
-                    "/Users/Dinamo/Documents/NetBeansProjectsAStiRo/javatraninggastiro/JavaTraining/src/multithreading",
+                    "C:/Users/Dinamo/Desktop/Javaprocess",
                     "multithreading.SayHello",
                     "2", "John", "Jane");
             Map<String, String> env = pb.environment();

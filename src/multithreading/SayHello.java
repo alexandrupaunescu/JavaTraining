@@ -25,11 +25,12 @@ public class SayHello {
 
         String numberOfParameters = args[0];
         int numberOfParam = Integer.parseInt(numberOfParameters);
-        try (FileWriter fw = new FileWriter("/Users/Dinamo/Desktop/MultithreadingFile.txt")) {
+        try (FileWriter fw = new FileWriter("C:/Users/Dinamo/Desktop/Javaprocess/MultithreadingFile.txt")) {
+           
             for (int param = 1; param <= numberOfParam; param++) {
                 fw.append("Hello " + args[param] + "\n");
 // read process environment. System will deliver default variables and also variables defined by me.
-                Map<String, String> env = System.getenv();
+                Map<String, String> env = System.getenv(); 
                 String congrats = env.get("TEXT_CONGRATS");
                 String hi = env.get("TEXT_HI");
                 fw.append("ENVIRONMENT VARIABLE CONGRATS: " + congrats + "\n");
