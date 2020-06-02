@@ -26,7 +26,7 @@ public class Multiproces {
         try {
             ProcessBuilder pb;
 // Use process builder to start 2 processes multithreading.SayHello with parameter
-            pb = new ProcessBuilder("Notepad.exe");
+            pb = new ProcessBuilder("\"C:\\Program Files\\Windows NT\\Accessories\\wordpad.exe\"");
             
             Process p1 = pb.start();
 
@@ -35,7 +35,7 @@ public class Multiproces {
             Process p3 = pb.start();
 
         } catch (IOException ex) {
-            Logger.getLogger(Multiprocess.class.getName()).log(Level.SEVERE, "An IO exception is here!", ex);
+            Logger.getLogger(Multiproces.class.getName()).log(Level.SEVERE, "An IO exception is here!", ex);
         }
     }
 }

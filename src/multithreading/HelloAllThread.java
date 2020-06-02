@@ -7,16 +7,11 @@ package multithreading;
 
 /**
  *
- * @author Dinamo
+ * @author GAP
  */
-class HelloAllThread {
-
-    void start() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    String getState() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
+class HelloAllThread extends Thread{
+   @Override
+   public void run(){
+       System.out.println("Hello all thread!");
+   } 
 }
