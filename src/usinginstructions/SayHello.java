@@ -16,6 +16,10 @@ public abstract class SayHello {
   */           
     public void displayLine(){
          System.out.println(line);
+         System.out.println(line);
+         System.out.println(line);
+         System.out.println(line);
+         
     }
     /**
      Method display a greeeting in to a specified language
