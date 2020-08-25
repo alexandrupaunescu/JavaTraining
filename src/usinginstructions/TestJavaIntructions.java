@@ -64,6 +64,7 @@ public class TestJavaIntructions {
          // display all ements of collection
          for(Integer currentElements:listOfIntegers){
          System.out.println("Element value is "+currentElements.intValue());
+
          }
            
 
